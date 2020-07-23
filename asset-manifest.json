@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/wesleymtx/teste/static/css/main.5f361e03.chunk.css",
+    "main.js": "/wesleymtx/teste/static/js/main.7150d3e0.chunk.js",
+    "main.js.map": "/wesleymtx/teste/static/js/main.7150d3e0.chunk.js.map",
+    "runtime-main.js": "/wesleymtx/teste/static/js/runtime-main.932afe1e.js",
+    "runtime-main.js.map": "/wesleymtx/teste/static/js/runtime-main.932afe1e.js.map",
+    "static/js/2.69de081f.chunk.js": "/wesleymtx/teste/static/js/2.69de081f.chunk.js",
+    "static/js/2.69de081f.chunk.js.map": "/wesleymtx/teste/static/js/2.69de081f.chunk.js.map",
+    "index.html": "/wesleymtx/teste/index.html",
+    "precache-manifest.547c1e0213bff8f503ea07cedbce0b37.js": "/wesleymtx/teste/precache-manifest.547c1e0213bff8f503ea07cedbce0b37.js",
+    "service-worker.js": "/wesleymtx/teste/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/wesleymtx/teste/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.69de081f.chunk.js.LICENSE.txt": "/wesleymtx/teste/static/js/2.69de081f.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/wesleymtx/teste/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.932afe1e.js",
+    "static/js/2.69de081f.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.7150d3e0.chunk.js"
+  ]
+}
