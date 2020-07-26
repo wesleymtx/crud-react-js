@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-class Controller extends React.Component{
+class Formulario extends React.Component{
   constructor(props){
     super(props)
     this.state = {valor: true}
@@ -11,10 +10,8 @@ class Controller extends React.Component{
    }
    render(){
      return (
-       <div>
-       
+       <div class="row my-4">
          <Form refreshParent={this.refreshParent}/>
-       
          <Table/>
        </div>
      ) 
@@ -33,13 +30,13 @@ class Controller extends React.Component{
    
   alunos = () => {
    return ( lista.map((aluno, index) => (
-     <tr><td>{aluno.nome}</td><td>{aluno.nota}</td><td>{aluno.nota>=5 ? 'Aprovado' : 'Reprovado'} <button className="btn btn-danger" onClick={() => this.remove(index)}>Remover</button>
-     </td></tr>
+     <tr><td>{aluno.nome}</td><td>{aluno.nota}</td><td>{aluno.nota>=5 ? 'Aprovado' : 'Reprovado'} </td><td><button className="btn btn-danger" onClick={() => this.remove(index)}>Remover</button></td>
+     </tr>
    ))
  )
   } 
  render(){
-   return <table className="table"><th>Nome</th><th>Pontos</th><th>Resultado</th>     {this.alunos()}</table> 
+   return <table className="table col-4"><th>Nome</th><th>Pontos</th><th>Resultado</th>     {this.alunos()}</table> 
  }
    
  }
@@ -47,7 +44,7 @@ class Controller extends React.Component{
  class Form extends React.Component{
    constructor(props){
      super(props)
-     this.state = {nome: 'kkk', ponto: 5}
+     this.state = {nome: '', ponto: ''}
    }
    
    submit = (e) => {
@@ -68,14 +65,14 @@ class Controller extends React.Component{
    render(){
      return (
       
-       <form onSubmit={this.submit}>
+       <form onSubmit={this.submit} className="col-2">
          
       <div>
-         <div className="col-2">
+         <div className="">
          <label>Nome</label> 
          <input type="text" class="form-control" value={this.state.nome} onChange={this.changeName} />
          </div>
-         <div className="col-2">
+         <div className="">
          <label>Pontuação</label> 
          <input type="number"  class="form-control" value={this.state.ponto} onChange={this.changeScore}/>
          <input class="btn btn-primary my-2" type="submit" value="enviar"/>
@@ -90,4 +87,4 @@ class Controller extends React.Component{
  
  const lista = [{nome: 'Wesley', nota: 10}, {nome: 'Wesley', nota: 8}, {nome: 'teste', nota: 4},]
 
- export default Controller;
+ export default Formulario;
